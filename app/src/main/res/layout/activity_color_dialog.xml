@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.koorosh.shop5.ColorDialogActivity">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:id="@+id/spnColors"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/sign_in_text"
+        android:paddingRight="20dp" >
+    </Spinner>
+
+    <NumberPicker
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:id="@+id/txtQuantity"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="wrap_content"></NumberPicker>
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/btnAdd"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_pressed"
+        android:textColorHighlight="@color/colorAccent"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:text="افزودن" />
+
+</LinearLayout>

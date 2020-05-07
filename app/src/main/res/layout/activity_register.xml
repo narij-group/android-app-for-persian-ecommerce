@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.koorosh.shop5.UI.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="#eee"
+                android:padding="30dp"
+                android:text="REGISTER"
+                android:textAlignment="center"
+                android:textColor="#3693ff"
+                android:textSize="40dp"
+
+                />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sign_in_text"
+                android:hint="نام..."
+                android:nextFocusForward="@+id/family"
+                android:paddingRight="20dp"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:paddingLeft="20dp" />
+
+            <EditText
+                android:id="@+id/family"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sign_in_text"
+                android:imeOptions="actionNext"
+                android:hint="نام خانوادگی..."
+                android:paddingRight="20dp"
+                android:inputType="text"
+                android:nextFocusForward="@+id/email"
+                android:paddingLeft="20dp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:imeOptions="actionNext"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sign_in_text"
+                android:hint="پست الکترونیک..."
+                android:inputType="textEmailAddress"
+                android:paddingRight="20dp"
+                android:nextFocusForward="@+id/username"
+                android:paddingLeft="20dp" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="10dp"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sign_in_text"
+                android:hint="نام کاربری..."
+                android:paddingRight="20dp"
+                android:nextFocusForward="@+id/password"
+                android:paddingLeft="20dp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:imeOptions="actionNext"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sign_in_text"
+                android:hint="...رمز عبور "
+
+                android:nextFocusForward="@+id/repeatpassword"
+                android:textAlignment="viewEnd"
+                android:inputType="textPassword"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp" />
+
+            <EditText
+                android:id="@+id/repeatpassword"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:imeOptions="actionNext"
+                android:background="@drawable/sign_in_text"
+                android:hint="...تکرار رمز عبور "
+                android:textAlignment="viewEnd"
+                android:inputType="textPassword"
+                android:paddingRight="20dp"
+                android:nextFocusForward="@+id/nationality_code"
+                android:paddingLeft="20dp" />
+
+            <EditText
+                android:id="@+id/nationality_code"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:imeOptions="actionNext"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sign_in_text"
+                android:hint="کد ملی..."
+                android:inputType="number"
+                android:paddingRight="20dp"
+                android:nextFocusForward="@+id/mobile"
+                android:paddingLeft="20dp" />
+
+            <EditText
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sign_in_text"
+                android:inputType="number"
+                android:hint="شماره موبایل..."
+                android:paddingRight="20dp"
+                android:imeOptions="actionNext"
+                android:nextFocusForward="@+id/phone"
+                android:paddingLeft="20dp" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:imeOptions="actionDone"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sign_in_text"
+                android:inputType="number"
+                android:hint="تلفن ثابت..."
+                android:paddingRight="20dp"
+                android:nextFocusForward="@+id/phone"
+                android:paddingLeft="20dp"/>
+
+            <Button
+                android:id="@+id/btnregister"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_pressed"
+                android:text="ثبت نام"
+                android:textColor="#fff"
+                android:textColorHighlight="@color/colorAccent"
+                android:textSize="20dp" />
+            <Button
+                android:id="@+id/btn_login"
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_upload"
+                android:text="ورود"
+                android:textColor="#fff"
+                android:textColorHighlight="@color/colorAccent"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

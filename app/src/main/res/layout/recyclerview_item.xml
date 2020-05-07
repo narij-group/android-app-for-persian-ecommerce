@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    cardCornerRadius="2dp"
+    cardElevation="2dp"
+    cardPreventCornerOverlap="false"
+    contentPadding="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginRight="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ProductImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_margin="15dp"
+            android:padding="7dp"
+            android:src="@drawable/btn_add" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+            <TextView
+                android:id="@+id/LatinName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="12dp"
+                android:textColor="#222"
+                android:paddingRight="10dp"
+                android:text="Energizer 8000mah Iphone Support 3time Charge"
+                android:textAllCaps="true"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/PersianName"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="11dp"
+                android:textColor="#666"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:paddingLeft="5dp"
+                android:text="گوشی موبایل سامسونگ گلکسی اس هشت" />
+
+
+            <TextView
+                android:id="@+id/OriginalPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:text="132,000,000 تومان"
+                android:textColor="#ff5353"
+                android:textDirection="ltr"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/LastPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="5dp"
+                android:text="111,000,000 تومان"
+                android:textColor="#00bf5a"
+                android:textDirection="ltr"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

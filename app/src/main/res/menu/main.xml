@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.daimajia.slider.demo.MainActivity" >
+    <group>
+        <item android:title="خانه"
+            android:icon="@mipmap/ic_home"
+            ></item>
+    </group>
+</menu>

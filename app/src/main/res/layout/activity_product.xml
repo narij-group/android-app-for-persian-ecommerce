@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.koorosh.shop5.UI.ProductActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/textBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="#eee"
+                android:padding="30dp"
+                android:text="ADDING"
+                android:textAlignment="center"
+                android:textColor="#3693ff"
+                android:textSize="40dp" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/sign_in_text"
+                android:hint="نام محصول ..."
+                android:inputType="text"
+                android:paddingRight="20dp" />
+
+            <EditText
+                android:id="@+id/latinname"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/sign_in_text"
+                android:hint="Product's Name..."
+                android:inputType="text"
+                android:paddingLeft="20dp" />
+
+            <EditText
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sign_in_text"
+                android:hint="قیمت ..."
+                android:inputType="number"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                />
+
+            <Spinner
+                android:id="@+id/brand"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sign_in_text"
+                android:paddingRight="20dp"></Spinner>
+
+            <Spinner
+                android:id="@+id/group"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sign_in_text"
+                android:paddingRight="20dp"></Spinner>
+
+
+            <Spinner
+                android:id="@+id/subgroup"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sign_in_text"
+                android:paddingRight="20dp"></Spinner>
+
+
+            <Spinner
+                android:id="@+id/suppergroup"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sign_in_text"
+                android:paddingRight="20dp"></Spinner>
+
+
+            <Button
+                android:id="@+id/btnAddColor"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_upload"
+                android:text="رنگ و تعداد"
+                android:textColor="#fff"
+                android:textColorHighlight="@color/colorAccent"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/select_image"
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_upload"
+                android:text="آپلود تصویر"
+                android:textColor="#fff"
+                android:textColorHighlight="@color/colorAccent"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_pressed"
+                android:textColorHighlight="@color/colorAccent"
+                android:text="افزودن محصول"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
